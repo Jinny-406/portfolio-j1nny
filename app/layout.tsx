@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en" className="dark" suppressHydrationWarning>
       <head>
         {/* Monetag site verification — must be in <head> */}
-        <meta name="monetag" content="7b68f3121dab2fec8233b1ff178b7d47" />
+        <meta name="monetag" content="83823ff40d9d2ce9935255f930549e3d" />
       </head>
       <body className="antialiased" suppressHydrationWarning>
 
