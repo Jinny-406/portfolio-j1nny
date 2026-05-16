@@ -35,145 +35,113 @@ export default function Home() {
           }} />
       </div>
 
-      {/* ── STICKY BOTTOM — Mobile 320x50 ────────────────── */}
+      {/* ── STICKY BOTTOM — 320x50 ───────────────────────── */}
       <div className="fixed bottom-0 left-0 right-0 z-50 flex justify-center bg-black/80 backdrop-blur-sm py-1">
         <AdMobile id="sticky-bottom" />
       </div>
 
       <div className="relative z-10 pt-20">
 
-        {/* ── 1. TOP — Leaderboard 728x90 ──────────────────── */}
-        <div className="flex justify-center px-4 py-3">
-          <AdLeaderboard />
-        </div>
+        {/* ── 1. TOP Leaderboard ────────────────────────────── */}
+        <div className="flex justify-center px-4 py-3"><AdLeaderboard id="leader-top" /></div>
 
-        {/* ── 2. BEFORE HERO — 468x60 ──────────────────────── */}
-        <div className="flex justify-center px-4 pb-3">
-          <AdBanner468 id="before-hero" />
-        </div>
+        {/* ── 2. 468x60 before hero ────────────────────────── */}
+        <div className="flex justify-center px-4 pb-3"><AdBanner468 id="banner-1" /></div>
 
         {/* HERO */}
         <Hero />
 
-        {/* ── 3. AFTER HERO — Leaderboard 728x90 ───────────── */}
-        <div className="flex justify-center px-4 py-4">
-          <AdLeaderboard />
-        </div>
+        {/* ── 3. Leaderboard after hero ────────────────────── */}
+        <div className="flex justify-center px-4 py-4"><AdLeaderboard id="leader-2" /></div>
 
-        {/* ── 4+5. TWO 300x250 SQUARES ─────────────────────── */}
+        {/* ── 4+5. Two 300x250 ─────────────────────────────── */}
         <div className="flex flex-col sm:flex-row justify-center gap-4 px-4 pb-4 max-w-4xl mx-auto">
-          <AdRectangle id="sq-1" />
-          <AdRectangle id="sq-2" />
+          <AdRectangle id="rect-1" />
+          <AdRectangle id="rect-2" />
         </div>
 
-        {/* ── 6. NATIVE BANNER ─────────────────────────────── */}
-        <div className="max-w-5xl mx-auto px-4 pb-4">
-          <AdNative id="native-1" />
-        </div>
+        {/* ── 6. Native ────────────────────────────────────── */}
+        <div className="max-w-5xl mx-auto px-4 pb-4"><AdNative id="native-1" /></div>
 
-        {/* ── 7. BEFORE ABOUT — 468x60 ─────────────────────── */}
-        <div className="flex justify-center px-4 pb-4">
-          <AdBanner468 id="before-about" />
-        </div>
+        {/* ── 7. 468x60 before about ───────────────────────── */}
+        <div className="flex justify-center px-4 pb-4"><AdBanner468 id="banner-2" /></div>
 
         {/* ABOUT */}
         <About />
 
-        {/* ── 8. AFTER ABOUT — 300x250 ─────────────────────── */}
-        <div className="flex justify-center px-4 py-4">
-          <AdRectangle id="after-about" />
-        </div>
+        {/* ── 8. 300x250 after about ───────────────────────── */}
+        <div className="flex justify-center px-4 py-4"><AdRectangle id="rect-3" /></div>
 
-        {/* ── 9+10+11. THREE 300x250 ────────────────────────── */}
+        {/* ── 9+10+11. Three 300x250 ───────────────────────── */}
         <div className="flex flex-col sm:flex-row justify-center gap-4 px-4 pb-4 max-w-5xl mx-auto">
-          <AdRectangle id="triple-1" />
-          <AdRectangle id="triple-2" />
-          <AdRectangle id="triple-3" />
+          <AdRectangle id="rect-4" />
+          <AdRectangle id="rect-5" />
+          <AdRectangle id="rect-6" />
         </div>
 
-        {/* ── 12. LEADERBOARD ──────────────────────────────── */}
-        <div className="flex justify-center px-4 pb-4">
-          <AdLeaderboard />
-        </div>
+        {/* ── 12. Leaderboard ──────────────────────────────── */}
+        <div className="flex justify-center px-4 pb-4"><AdLeaderboard id="leader-3" /></div>
 
-        {/* ── 13. BEFORE PROJECTS — 468x60 ─────────────────── */}
-        <div className="flex justify-center px-4 pb-4">
-          <AdBanner468 id="before-projects" />
-        </div>
+        {/* ── 13. 468x60 before projects ───────────────────── */}
+        <div className="flex justify-center px-4 pb-4"><AdBanner468 id="banner-3" /></div>
 
         {/* PROJECTS */}
         <Projects />
 
-        {/* ── 14. AFTER PROJECTS — Leaderboard ─────────────── */}
-        <div className="flex justify-center px-4 py-4">
-          <AdLeaderboard />
-        </div>
+        {/* ── 14. Leaderboard after projects ───────────────── */}
+        <div className="flex justify-center px-4 py-4"><AdLeaderboard id="leader-4" /></div>
 
-        {/* ── 15+16. 160x600 SKYSCRAPERS SIDE BY SIDE ──────── */}
+        {/* ── 15+16. Two Skyscrapers 160x600 ───────────────── */}
         <div className="flex justify-center gap-8 px-4 pb-4">
           <AdSkyscraper id="sky-1" />
           <AdSkyscraper id="sky-2" />
         </div>
 
-        {/* ── 17. NATIVE BANNER ────────────────────────────── */}
-        <div className="max-w-5xl mx-auto px-4 pb-4">
-          <AdNative id="native-2" />
-        </div>
+        {/* ── 17. Native ───────────────────────────────────── */}
+        <div className="max-w-5xl mx-auto px-4 pb-4"><AdNative id="native-2" /></div>
 
-        {/* ── 18+19. TWO 160x300 HALF-PAGE ─────────────────── */}
+        {/* ── 18+19. Two 160x300 ───────────────────────────── */}
         <div className="flex flex-col sm:flex-row justify-center gap-4 px-4 pb-4 max-w-4xl mx-auto">
           <AdHalfPage id="half-1" />
           <AdHalfPage id="half-2" />
         </div>
 
-        {/* ── 20. BEFORE SKILLS — 468x60 ───────────────────── */}
-        <div className="flex justify-center px-4 pb-4">
-          <AdBanner468 id="before-skills" />
-        </div>
+        {/* ── 20. 468x60 before skills ─────────────────────── */}
+        <div className="flex justify-center px-4 pb-4"><AdBanner468 id="banner-4" /></div>
 
         {/* SKILLS */}
         <Skills />
 
-        {/* ── 21. AFTER SKILLS — Leaderboard ───────────────── */}
-        <div className="flex justify-center px-4 py-4">
-          <AdLeaderboard />
-        </div>
+        {/* ── 21. Leaderboard after skills ─────────────────── */}
+        <div className="flex justify-center px-4 py-4"><AdLeaderboard id="leader-5" /></div>
 
-        {/* ── 22+23+24. THREE 300x250 ───────────────────────── */}
+        {/* ── 22+23+24. Three 300x250 ──────────────────────── */}
         <div className="flex flex-col sm:flex-row justify-center gap-4 px-4 pb-4 max-w-5xl mx-auto">
-          <AdRectangle id="mid-1" />
-          <AdRectangle id="mid-2" />
-          <AdRectangle id="mid-3" />
+          <AdRectangle id="rect-7" />
+          <AdRectangle id="rect-8" />
+          <AdRectangle id="rect-9" />
         </div>
 
-        {/* ── 25. NATIVE BANNER ────────────────────────────── */}
-        <div className="max-w-5xl mx-auto px-4 pb-4">
-          <AdNative id="native-3" />
-        </div>
+        {/* ── 25. Native ───────────────────────────────────── */}
+        <div className="max-w-5xl mx-auto px-4 pb-4"><AdNative id="native-3" /></div>
 
-        {/* ── 26. BEFORE CONTACT — 468x60 ──────────────────── */}
-        <div className="flex justify-center px-4 pb-4">
-          <AdBanner468 id="before-contact" />
-        </div>
+        {/* ── 26. 468x60 before contact ────────────────────── */}
+        <div className="flex justify-center px-4 pb-4"><AdBanner468 id="banner-5" /></div>
 
         {/* CONTACT */}
         <Contact />
 
-        {/* ── 27. AFTER CONTACT — Leaderboard ──────────────── */}
-        <div className="flex justify-center px-4 py-4">
-          <AdLeaderboard />
-        </div>
+        {/* ── 27. Leaderboard after contact ────────────────── */}
+        <div className="flex justify-center px-4 py-4"><AdLeaderboard id="leader-6" /></div>
 
-        {/* ── 28+29. TWO 300x250 ────────────────────────────── */}
+        {/* ── 28+29. Two 300x250 ───────────────────────────── */}
         <div className="flex flex-col sm:flex-row justify-center gap-4 px-4 pb-4 max-w-4xl mx-auto">
-          <AdRectangle id="footer-1" />
-          <AdRectangle id="footer-2" />
+          <AdRectangle id="rect-10" />
+          <AdRectangle id="rect-11" />
         </div>
 
-        {/* ── 30. FINAL LEADERBOARD ────────────────────────── */}
-        <div className="flex justify-center px-4 pb-28">
-          <AdLeaderboard />
-        </div>
+        {/* ── 30. Final leaderboard ────────────────────────── */}
+        <div className="flex justify-center px-4 pb-28"><AdLeaderboard id="leader-7" /></div>
 
       </div>
     </div>
