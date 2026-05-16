@@ -8,6 +8,10 @@ import { Footer } from '@/components/footer'
 export const metadata: Metadata = {
   title: 'Jinny | Vibecoder & Animator',
   description: 'Creative developer specializing in animations, web development, and YouTube content creation.',
+  other: {
+    // Monetag site verification
+    monetag: '7b68f3121dab2fec8233b1ff178b7d47',
+  },
 }
 
 export default function RootLayout({
@@ -17,29 +21,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
+      <head>
+        {/* Monetag verification */}
+        <meta name="monetag" content="7b68f3121dab2fec8233b1ff178b7d47" />
+      </head>
       <body className="antialiased" suppressHydrationWarning>
 
-        {/* =====================================================
-            MONETAG — SITE-WIDE SCRIPT
-            Paste your Monetag script src below, replacing the
-            placeholder. Get it from: monetag.com → My Sites → Get Code
+        {/* Adsterra — Popunder (fires once per session) */}
+        <Script src="https://pl29465417.effectivecpmnetwork.com/9d/8b/ad/9d8bad87448adfcb126831505ab24cb8.js" strategy="afterInteractive" />
 
-            Example:
-            <Script src="https://alwingulla.com/88/tag.min.js"
-                    data-zone="12345" async />
-            ===================================================== */}
-        {/* <Script src="PASTE_MONETAG_SRC_HERE" async /> */}
-
-        {/* =====================================================
-            ADSTERRA — SITE-WIDE SCRIPT
-            Paste your Adsterra site verification / global script
-            below. Get it from: publishers.adsterra.com → Sites → Script
-
-            Example:
-            <Script src="//www.highperformanceformat.com/XXXXXXXX/invoke.js"
-                    async />
-            ===================================================== */}
-        {/* <Script src="PASTE_ADSTERRA_SRC_HERE" async /> */}
+        {/* Adsterra — Social Bar (floating icons on edge of screen) */}
+        <Script src="https://pl29465419.effectivecpmnetwork.com/1b/8c/21/1b8c21f5dbb739c733822e8578b28c6c.js" strategy="afterInteractive" />
 
         <ThemeProvider
           attribute="class"
